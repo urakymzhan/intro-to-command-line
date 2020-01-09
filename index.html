@@ -4,10 +4,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Intro to Command Line Interface - Girl Develop It</title>
+	<title>Intro to Command Line Interface </title>
 
-	<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-	<meta name="author" content="Girl Develop It">
+	<meta name="description" content="Originally uses Hakim El Hattab's reveal.js">
+	<meta name="description" content="Forked from Girl Develop It framework">
+	<meta name="author" content="Ulan Rakymzhanov - Seytech Instructor">
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,10 +38,7 @@
 	<!-- If use the PDF print sheet so students can print slides-->
 
 	<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-	<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+<!-- 	<link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
 </head>
 
 <body>
@@ -51,36 +49,18 @@
 		<div class="slides">
 			<!-- Opening -->
 			<section>
-				<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder" />
-				<h1>Introduction to the Command Line</h1>
+				<img src="img/seytech-logo.png" alt="Seytech Logo" class="noborder" />
+				<h1 style="color: #53555C; font-size: 2.2em;">Introduction to the Command Line</h1>
 			</section>
 			<!-- Compatibility-->
 			<section>
-				<h2>Welcome!</h2>
-				<p>
-					Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-
+				<h2>Welcome!</h2><br>
 				<h3>Some "rules":</h3>
 				<ul>
 					<li>We are here for you!</li>
 					<li>Every question is important</li>
 					<li>Help each other out</li>
-					<li>Have fun</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Meet Your Instructor</h2>
-				<br>
-				<h3>Maureen McElaney</h3>
-				<p>@mo_mack</p>
-			</section>
-
-			<section>
-				<h2>Now it's all about you!</h2>
-				<ul>
-					<li>Tell us who you are.</li>
-					<li>What do you hope to get out of this class?</li>
+					<li>Have fun!</li>
 				</ul>
 			</section>
 
@@ -96,15 +76,17 @@
 
 			<section>
 				<h2>What is a Shell?</h2>
-				<p><strong>A text-based command interpreter</strong></p>
+				<p><strong>A text-based command interpreter,</strong> <br>
+					which is used to interact with the operating system</p>
 				<br>
-				<p>The most common shell is called BASH</p>
-				<p>For OS X, use a shell via the “Terminal” app</p>
+				<p><strong>The most common shell is called BASH</strong></p>
+				<p>Others: Zsh, Tcsh/Csh, Ksh etc.</p>
+				<p>You can use shell via "Terminal" app on MAC, on Windows via "Command Propmt"</p>
 			</section>
 
 			<section>
 				<h2>The Shell</h2>
-				<img src="img/terminal.png" alt="The Terminal"/>
+				<img src="img/terminal-0.png" alt="The Terminal"/>
 			</section>
 
 			<section>
@@ -177,8 +159,8 @@
 
 			<section>
 				<h2>Two Types of Paths</h2><br>
-				<p><strong>Relative</strong>:<br> <code class="html" contenteditable>Desktop/dougthepug.jpg</code></p><br>
-				<p><strong>Absolute</strong>:<br> <code class="html" contenteditable>/Users/anastasialanz/Desktop/dougthepug.jpg</code></p>
+				<p><strong>Relative</strong>:<br> <code class="html" contenteditable>Desktop/homepage.jpg</code></p><br>
+				<p><strong>Absolute</strong>:<br> <code class="html" contenteditable>/Users/ulan13/Desktop/homepage.jpg</code></p>
 			</section>
 
 			<section>
@@ -222,7 +204,6 @@
 
 			<section>
 				<h2>cd</h2>
-				<h4>(change directory)</h4>
 				<img src="img/cd.png" alt="cd">
 				<p><em>There are 2 other ways that we could have gotten to our home directory...what are they?</em></p>
 			</section>
@@ -277,7 +258,7 @@
 			</section>
 
 			<section>
-				<h2>ls -al</h2>
+				<h2>ls -al or -la</h2>
 				<h4>Show hidden files and use a long list format</h4>
 
 				<img src="img/ls-al.png" alt="ls -al" width="72%" height="72%">
@@ -319,12 +300,13 @@
 
 				<ol>
 				  <li>Change to your home directory desktop</li>
-				  <li>Create a <b>gdi/burlington</b> directory path</li>
-				  <li>Navigate into the <b>gdi/burlington</b> directory</li>
+				  <li>Create a <b>seytech/bootcamp</b> directory path</li>
+				  <li>Navigate into the <b>seytech/bootcamp</b> directory</li>
 				  <li>Create a <b>CLI</b> directory</li>
 				  <li>View the contents of the <b>CLI</b> directory</li>
 				  <li>Navigate up two directories</li>
 				  <li>Use the <b>pwd</b> command to verify you are home</li>
+				  <li> Delete seytech directory</li>
 				</ol>
 			</section>
 
@@ -421,7 +403,7 @@
 				<h3>Exercise 2</h3>
 
 				<ol>
-				  <li>Create a folder called <b>gdi</b></li>
+				  <li>Create a folder called <b>seytech</b></li>
 				  <li>Make that folder your current working directory</li>
 				  <li>Create two files: <b>file1.txt</b>, <b>file2.txt</b></li>
 				  <li>Copy <b>file1.txt</b> and call the copy <b>file3.txt</b></li>
@@ -537,6 +519,8 @@
 			<section>
 				<h2>Redirecting Output</h2>
 
+				<!-- change this --> 
+
 				<img src="img/redirection.png" alt="redirection">
 			</section>
 
@@ -559,7 +543,7 @@
 				<h3>Exercise 3</h3>
 
 				<ol>
-				  <li>In the <b>gdi</b> directory, output the contents of <b>file2.txt</b> to the terminal</li>
+				  <li>In the <b>seytech</b> directory, output the contents of <b>file2.txt</b> to the terminal</li>
 				  <li>Add <a href="http://www.lipsum.com/" target="_blank">a sentence</a> to <b>file2.txt</b></li>
 				  <li>Add a few more sentences to <b>file2.txt</b></li>
 				  <li>Search the file for the word of your choice and add the results to <b>file3.txt</b></li>
@@ -740,12 +724,12 @@
 
 
 		</div>
-		<footer>
+<!-- 		<footer>
 			<div class="copyright">
-				Introduction to Command Line Interface -- Girl Develop It Burlington --
+				Introduction to Command Line Interface -- Seytech --
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
 			</div>
-		</footer>
+		</footer> -->
 	</div>
 
 
