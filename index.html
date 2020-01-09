@@ -50,7 +50,7 @@
 			<!-- Opening -->
 			<section>
 				<img src="img/seytech-logo.png" alt="Seytech Logo" class="noborder" />
-				<h1 style="color: #53555C; font-size: 2.2em;">Introduction to the Command Line</h1>
+				<h1>Introduction to the Command Line</h1>
 			</section>
 			<!-- Compatibility-->
 			<section>
@@ -651,11 +651,11 @@
 				<h3>Exercise 5</h3>
 
 				<ol>
-					<li>Download the cat.txt file by running this command:<pre><code class="html" contenteditable>$ curl -OL gdibtv.github.io/intro-to-command-line/cat.txt</code></pre></li>
+					<li>Curl hello.txt content and store it in curl.txt by: <pre><code class="html" contenteditable style="font-size: 0.8rem">$ curl https://gist.githubusercontent.com/urakymzhan/163434d23050fcdbf3b441bc3e4985e9/raw > curl.txt </code></pre></li>
 					<li>Use the <b>head</b> command to see the first 10 lines of text.</li>
 					<li>Use the <b>tail</b> command to see the last 10 lines of text.</li>
-					<li>Pipe the results of <b>grep cat cat.txt</b> command through <b>wc</b> to count the number of times "cat" appears.</li>
-					<li>Using the <b>grep</b> man page, find the option for case insensitive matching. Try to find how many times "cat" and "Cat" appear.</li>
+					<li>Pipe the results of <b>grep lorem curl.txt</b> command through <b>wc</b> to count the number of times "lorem" appears.</li>
+					<li>Using the <b>grep</b> man page, find the option for case insensitive matching. Try to find how many times "lorem" and "Lorem" appear.</li>
 				</ol>
 			</section>
 
@@ -682,7 +682,7 @@
 			<section>
 				<h2>Extras</h2>
 				<h3>Open a URL in the browser with command line</h3>
-				<pre><code class="html" contenteditable>$ open http://girldevelopit.com</code></pre>
+				<pre><code class="html" contenteditable>$ open https://www.seytech.co/</code></pre>
 			</section>
 
 			<section>
@@ -695,8 +695,11 @@
 				<h2>Develop it!</h2>
 				<ol>
 					<li>Install cowsay on your environment.</li>
-					<li>Use the cowsay man page to list the different cowfiles.</li>
-					<li>Generate 5 different cowsay cowfiles pictures using the <b>- f</b> option.</li>
+					<li>Use:
+						<pre><!--
+							--><code class="html" contenteditable> https://medium.com/@jasonrigden/cowsay-is-the-most-</pre><!--
+								--><pre>important-unix-like-command-ever-35abdbc22b7f</code></pre>
+					to play aroun d with different cowsay commands</li>
 					<li>Open a url of your choice from the command line.</li>
 					<li>Use the man pages and find a different voice output for the say command.</li>
 				</ol>
@@ -716,20 +719,10 @@
 
 			<section>
 				<h2>Thanks!</h2>
-
-				<h3>Maureen McElaney</h3>
-				<h4>burlington@girldevelopit.com</h4>
-				<h4><a href="https://twitter.com/mo_mack">@mo_mack</a></h4>
 			</section>
 
 
 		</div>
-<!-- 		<footer>
-			<div class="copyright">
-				Introduction to Command Line Interface -- Seytech --
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-			</div>
-		</footer> -->
 	</div>
 
 
